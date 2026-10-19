@@ -1,0 +1,32 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "yourname.clickbuffer",
+	"name": "Click Buffer",
+	"version": "v1.0.0",
+	"developer": "yourname",
+	"description": "Forgives early clicks by up to 8 physics ticks (TPS, not FPS).",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"default": true
+		},
+		"buffer-frames": {
+			"type": "int",
+			"name": "Buffer (ticks)",
+			"description": "How many physics ticks early you can click and still have the click count. At the default 240 TPS, 8 ticks is about 33 ms.",
+			"default": 3,
+			"min": 1,
+			"max": 8,
+			"control": {
+				"slider": true
+			}
+		}
+	}
+}
